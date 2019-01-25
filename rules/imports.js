@@ -3,7 +3,7 @@ module.exports = {
     es6: true,
   },
   plugins: [
-    'html',
+    'import',
   ],
   rules: {
     'import/no-unresolved': 0,

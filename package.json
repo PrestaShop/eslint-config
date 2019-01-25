@@ -31,14 +31,12 @@
     "babel-tape-runner": "^3.0.0",
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.14.0",
     "tape": "^4.9.2"
   },
   "peerDependencies": {
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.14.0"
   }
 }

@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     './rules/common',
-    './rules/browser',
     './rules/imports',
     './rules/variables',
     './rules/env',
