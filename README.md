@@ -26,7 +26,7 @@ The above steps will automatically set up an ESLint configuration and install th
 **If you want to set up the config manually**, run the following command:
 
 ```bash
-npm install --save-dev eslint-config-prestashop eslint-config-airbnb-base eslint-plugin-import
+npm install --save-dev eslint-config-prestashop eslint-config-airbnb-base eslint-plugin-import eslint
 ```
 
 Then, add this to your `.eslintrc` file:
