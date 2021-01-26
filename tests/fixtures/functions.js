@@ -1,9 +1,9 @@
 // Exemple from https://github.com/DBAdventure/web/blob/master/store/modules/player.js
 /* eslint-disable no-shadow, no-param-reassign */
+import axios from 'axios';
 import settings from '~/config/general.config';
 import {isEmpty} from '~/lib/utils';
 import Player from '~/lib/player';
-import axios from 'axios';
 import api from '~/services/api';
 import * as types from '../mutation-types';
 
@@ -13,6 +13,7 @@ const state = () => ({
 });
 
 let instance;
+
 if (!process.browser && !process.env.SOCKET_PATH && settings.PORT) {
   instance = axios.create({baseURL: `http://localhost:${settings.PORT}`});
 } else {
