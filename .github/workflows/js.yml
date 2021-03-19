@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-versions: [8, 9, 10]
+        node-versions: [8, 9, 10, 11, 12, 13, 14, 15]
     steps:
     - name: Setup Node
       uses: actions/setup-node@v2
