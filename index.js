@@ -5,7 +5,7 @@ module.exports = {
     './rules/variables',
     './rules/env',
   ].map(require.resolve),
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   rules: {
     strict: 'error',
   },
