@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-prestashop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PrestaShop's JS ESLint config, following our styleguide",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/PrestaShop/eslint-config#readme",
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "@babel/eslint-parser": "^7.15.7",
     "babel-preset-airbnb": "^3.2.0",
     "babel-tape-runner": "^3.0.0",
     "eslint": "^5.4.0",
