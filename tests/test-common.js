@@ -1,23 +1,27 @@
-import eslint from 'eslint';
 import fs from 'fs';
 import path from 'path';
 import test from 'tape';
 
-const {CLIEngine} = eslint;
-const cli = new CLIEngine({
+const {ESLint} = require('eslint');
+
+const eslint = new ESLint({
   useEslintrc: false,
-  configFile: '.eslintrc',
+  overrideConfigFile: '.eslintrc',
 });
 
 const directoryPath = path.join(__dirname, './fixtures');
 fs.readdirSync(directoryPath).forEach((name) => {
-  test(`test eslint config to validate ${name}`, (t) => {
-    t.equal(
-      cli.executeOnText(
-        fs.readFileSync(path.join(directoryPath, name)).toString(),
-      ).errorCount,
-      0,
+  test(`test eslint config to validate ${name}`, async (t) => {
+    const results = await eslint.lintText(
+      fs.readFileSync(path.join(directoryPath, name)).toString(),
     );
+
+    results.forEach((r) => {
+      t.equals(
+        r.errorCount,
+        0,
+      );
+    });
 
     t.end();
   });

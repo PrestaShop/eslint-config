@@ -1,4 +1,5 @@
 /node_modules
+.log
 
 # Only apps should have lockfiles
 yarn.lock

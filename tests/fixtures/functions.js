@@ -55,7 +55,7 @@ const actions = {
 };
 
 const getters = {
-  currentPlayer: state => new Player(state.auth),
+  currentPlayer: (state) => new Player(state.auth),
 };
 
 const mutations = {
